@@ -1,10 +1,9 @@
 #!/bin/bash
 
-$file = $1
-footer = $2_header.html
-header = $2_footer.html
-outcome = $3
+File=$1
+Header="$2_header.html"
+Footer="$2_footer.html"
+Result=$3
 
-
-cat $footer $file $header | uniq > $outcome
+cat $Header $File $Footer > $Result
 
